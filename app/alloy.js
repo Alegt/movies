@@ -31,7 +31,16 @@ if (!Ti.App.Properties.hasProperty(Alloy.Globals.PROPERTY_ENABLE_LIST_ANIMATION)
 Alloy.Globals.EVENT_PROPERTY_ENABLE_MOTION_ANIMATION_DID_CHANGE = 'EVENT_PROPERTY_ENABLE_MOTION_ANIMATION_DID_CHANGE';
 Alloy.Globals.EVENT_PROPERTY_ENABLE_LIST_ANIMATION_DID_CHANGE = 'EVENT_PROPERTY_ENABLE_LIST_ANIMATION_DID_CHANGE';
 
+///////////////////////////////////////////////////////////////////////////////
+//
+// Omniture module
+//
+///////////////////////////////////////////////////////////////////////////////
 
+
+var omniture = require('com.backcountry.omniture');
+omniture.setDebugLogging(true);
+omniture.keepLifecycleSessionAlive();
 
 ///////////////////////////////////////////////////////////////////////////////
 //

@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Backcountry
+license: Specify your license
+copyright: Copyright (c) 2014 by Your Company
+
+
+# these should not be edited
+name: omniture
+moduleid: com.backcountry.omniture
+guid: 366a1cfe-1bb1-432e-b4c9-d81feba33269
+platform: iphone
+minsdk: 3.2.1.GA

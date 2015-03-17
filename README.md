@@ -61,6 +61,15 @@ $> ti build -p android
 ~~~
 
 
+### Ad hoc build
+
+- Create app id on Member Center, e.g:com.backcountry.movies. Replace on `tiapp.xml`: `<id>com.appcelerator.movies</id>`
+- Create ad hoc provisioning profile for new app, make sure to add devices to test with
+- Update provisioning profile from XCode
+- run `ti build --platform ios --target dist-adhoc`, select appropriate provisioning profile
+- open `dist/Movies.ipa` in iTunes, sync to device
+
+
 
 ## Credits
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.appcelerator.movies</id>
+    <id>com.backcountry.movies</id>
     <name>Movies</name>
     <version>1.0</version>
     <publisher>Appcelerator</publisher>
@@ -65,6 +65,7 @@
     <mobileweb/>
     <modules>
         <module platform="iphone">ti.coremotion</module>
+        <module platform="iphone" version="1.0">com.backcountry.omniture</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>
