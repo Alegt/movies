@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: optimizely
+author: Alejandro Gomez
+license: Specify your license
+copyright: Copyright (c) 2015 by 
+
+# these should not be edited
+name: optimizely
+moduleid: com.backcountry.optimizely
+guid: 9737b70e-67c9-4dc4-b942-2bb199b3d21d
+platform: iphone
+minsdk: 3.5.0.GA
