@@ -26,6 +26,13 @@
 		24DD6CFA1134B3F500162E58 /* ComBackcountryOptimizelyModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComBackcountryOptimizelyModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.m */; };
+		A9F3E86F1ABC926D004B02CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E86E1ABC926D004B02CB /* UIKit.framework */; };
+		A9F3E8711ABC9274004B02CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E8701ABC9274004B02CB /* SystemConfiguration.framework */; };
+		A9F3E8731ABC927C004B02CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E8721ABC927C004B02CB /* Security.framework */; };
+		A9F3E8751ABC9286004B02CB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E8741ABC9286004B02CB /* libsqlite3.dylib */; };
+		A9F3E8771ABC928E004B02CB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E8761ABC928E004B02CB /* libicucore.dylib */; };
+		A9F3E8791ABC9294004B02CB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E8781ABC9294004B02CB /* CFNetwork.framework */; };
+		A9F3E87B1ABC92B8004B02CB /* Optimizely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F3E87A1ABC92B8004B02CB /* Optimizely.framework */; };
 		AA747D9F0F9514B9006C5449 /* ComBackcountryOptimizely_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComBackcountryOptimizely_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -36,19 +43,26 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "optimizely";
+			remoteInfo = optimizely;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* ComBackcountryOptimizelyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComBackcountryOptimizelyModule.h"; path = "Classes/ComBackcountryOptimizelyModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ComBackcountryOptimizelyModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComBackcountryOptimizelyModule.m"; path = "Classes/ComBackcountryOptimizelyModule.m"; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* ComBackcountryOptimizelyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComBackcountryOptimizelyModule.h; path = Classes/ComBackcountryOptimizelyModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComBackcountryOptimizelyModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComBackcountryOptimizelyModule.m; path = Classes/ComBackcountryOptimizelyModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComBackcountryOptimizelyModuleAssets.h"; path = "Classes/ComBackcountryOptimizelyModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComBackcountryOptimizelyModuleAssets.m"; path = "Classes/ComBackcountryOptimizelyModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* ComBackcountryOptimizely_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComBackcountryOptimizely_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComBackcountryOptimizelyModuleAssets.h; path = Classes/ComBackcountryOptimizelyModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComBackcountryOptimizelyModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComBackcountryOptimizelyModuleAssets.m; path = Classes/ComBackcountryOptimizelyModuleAssets.m; sourceTree = "<group>"; };
+		A9F3E86E1ABC926D004B02CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9F3E8701ABC9274004B02CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A9F3E8721ABC927C004B02CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A9F3E8741ABC9286004B02CB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A9F3E8761ABC928E004B02CB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		A9F3E8781ABC9294004B02CB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A9F3E87A1ABC92B8004B02CB /* Optimizely.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Optimizely.framework; path = platform/Optimizely.framework; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ComBackcountryOptimizely_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBackcountryOptimizely_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libComBackcountryOptimizely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libComBackcountryOptimizely.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libComBackcountryOptimizely.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComBackcountryOptimizely.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F3E8791ABC9294004B02CB /* CFNetwork.framework in Frameworks */,
+				A9F3E8771ABC928E004B02CB /* libicucore.dylib in Frameworks */,
+				A9F3E8751ABC9286004B02CB /* libsqlite3.dylib in Frameworks */,
+				A9F3E8731ABC927C004B02CB /* Security.framework in Frameworks */,
+				A9F3E8711ABC9274004B02CB /* SystemConfiguration.framework in Frameworks */,
+				A9F3E86F1ABC926D004B02CB /* UIKit.framework in Frameworks */,
+				A9F3E87B1ABC92B8004B02CB /* Optimizely.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,12 +100,19 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "optimizely";
+			name = optimizely;
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9F3E87A1ABC92B8004B02CB /* Optimizely.framework */,
+				A9F3E8781ABC9294004B02CB /* CFNetwork.framework */,
+				A9F3E8761ABC928E004B02CB /* libicucore.dylib */,
+				A9F3E8741ABC9286004B02CB /* libsqlite3.dylib */,
+				A9F3E8721ABC927C004B02CB /* Security.framework */,
+				A9F3E8701ABC9274004B02CB /* SystemConfiguration.framework */,
+				A9F3E86E1ABC926D004B02CB /* UIKit.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -138,8 +166,8 @@
 			);
 			dependencies = (
 			);
-			name = "optimizely";
-			productName = "optimizely";
+			name = optimizely;
+			productName = optimizely;
 			productReference = D2AAC07E0554694100DB518D /* libComBackcountryOptimizely.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -215,11 +243,15 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComBackcountryOptimizely.dst";
+				DSTROOT = /tmp/ComBackcountryOptimizely.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/platform",
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComBackcountryOptimizely_Prefix.pch";
+				GCC_PREFIX_HEADER = ComBackcountryOptimizely_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -239,7 +271,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComBackcountryOptimizely";
+				PRODUCT_NAME = ComBackcountryOptimizely;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -253,11 +285,15 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/ComBackcountryOptimizely.dst";
+				DSTROOT = /tmp/ComBackcountryOptimizely.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/platform",
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComBackcountryOptimizely_Prefix.pch";
+				GCC_PREFIX_HEADER = ComBackcountryOptimizely_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -274,7 +310,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComBackcountryOptimizely";
+				PRODUCT_NAME = ComBackcountryOptimizely;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -288,11 +324,11 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComBackcountryOptimizely.dst";
+				DSTROOT = /tmp/ComBackcountryOptimizely.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComBackcountryOptimizely_Prefix.pch";
+				GCC_PREFIX_HEADER = ComBackcountryOptimizely_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -311,7 +347,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComBackcountryOptimizely";
+				PRODUCT_NAME = ComBackcountryOptimizely;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -326,11 +362,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LIBRARY = "libstdc++";
-				DSTROOT = "/tmp/ComBackcountryOptimizely.dst";
+				DSTROOT = /tmp/ComBackcountryOptimizely.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComBackcountryOptimizely_Prefix.pch";
+				GCC_PREFIX_HEADER = ComBackcountryOptimizely_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -346,7 +382,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComBackcountryOptimizely";
+				PRODUCT_NAME = ComBackcountryOptimizely;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";

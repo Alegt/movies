@@ -11,4 +11,7 @@
 {
 }
 
++(ComBackcountryOptimizelyModule*) shared;
+@property (retain) NSDictionary *config;
+
 @end

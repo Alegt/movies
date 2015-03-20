@@ -15,7 +15,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-var optm = require('com.backcountry.optimizely');
+require('com.backcountry.optimizely');
 
 // properties
 Alloy.Globals.PROPERTY_ENABLE_MOTION_ANIMATION = 'PROPERTY_ENABLE_MOTION_ANIMATION';

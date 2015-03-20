@@ -42,7 +42,7 @@
                         <string>com.optimizely</string>
                         <key>CFBundleURLSchemes</key>
                         <array>
-                            <string>optly2684670271</string>
+                            <string>optlyYourProjectID</string>
                         </array>
                     </dict>
                 </array>

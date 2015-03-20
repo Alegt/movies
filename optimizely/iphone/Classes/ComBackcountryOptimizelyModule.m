@@ -9,6 +9,8 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import "TiApp.h"
+#import <Optimizely/Optimizely.h>
 
 @implementation ComBackcountryOptimizelyModule
 
@@ -33,8 +35,25 @@
 	// this method is called when the module is first loaded
 	// you *must* call the superclass
 	[super startup];
-
+//    [self loadConfig];
 	NSLog(@"[INFO] %@ loaded",self);
+}
+
++(void)load
+{
+    [self performSelectorDuringRunLoopStart:@selector(start:)];
+}
+
+-(void)resumed:(id)sender
+{
+    NSDictionary *options = [[TiApp app] launchOptions];
+    if (options != nil) {
+        NSString *url = [options objectForKey:@"url"];
+        if ([Optimizely handleOpenURL:[NSURL URLWithString:url]]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 -(void)shutdown:(id)sender
@@ -87,21 +106,39 @@
 
 #pragma Public APIs
 
--(id)example:(id)args
++(ComBackcountryOptimizelyModule*) shared
 {
-	// example method
-	return @"hello world";
+    static ComBackcountryOptimizelyModule *singleton = NULL;
+
+    @synchronized(singleton) {
+        if (!singleton) {
+            singleton = [ComBackcountryOptimizelyModule new];
+        }
+    }
+    return singleton;
 }
 
--(id)exampleProp
+-(void)loadConfig
 {
-	// example property getter
-	return @"hello world";
+    NSString *configPath = [[NSBundle mainBundle] pathForResource:@"optimizelyConfig" ofType:@"json"];
+    NSData *data = [[NSFileManager defaultManager] contentsAtPath:configPath];
+    [self setConfig: [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil]];
+    NSLog(@"[INFO] Optimizely config loaded %@", [self config]);
 }
 
--(void)setExampleProp:(id)value
++(NSDictionary*)loadCon
 {
-	// example property setter
+    NSString *configPath = [[NSBundle mainBundle] pathForResource:@"optimizelyConfig" ofType:@"json"];
+    NSData *data = [[NSFileManager defaultManager] contentsAtPath:configPath];
+    NSDictionary *config = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    return config;
+}
+
++(void)start:(TiBindingRunLoop)runLoop
+{
+//    ComBackcountryOptimizelyModule *instance = [self shared];
+    [Optimizely sharedInstance].verboseLogging = YES;
+    [Optimizely startOptimizelyWithAPIToken:[[self loadCon] objectForKey:@"key"] launchOptions:nil];
 }
 
 @end
